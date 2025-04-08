@@ -14,5 +14,7 @@
             <button>등록</button>
         </form>
     </section>
+    <%-- views 안에 있는 걸로 불러오면 되지롱... --%>
+    <jsp:include page="footer.jsp" />
 </body>
 </html>
