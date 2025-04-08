@@ -7,6 +7,7 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor // 그냥 생성자
+@ToString
 // 아니 그럼 그냥 @Data 쓰면 안되요? -> (ㅂ팀장님한테 불려간다니까...)
 // 알았어요 그냥 JPA 안쓰고 MyBatis 쓰고 Record 쓰겠읍니다 ㅠㅠ
 // JPA
