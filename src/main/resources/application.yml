@@ -1,0 +1,10 @@
+
+spring:
+  application:
+    name: boot-jsp
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+server:
+  port: 9090
