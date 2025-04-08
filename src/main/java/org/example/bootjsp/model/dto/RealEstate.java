@@ -1,15 +1,16 @@
 package org.example.bootjsp.model.dto;
 
-import com.fasterxml.jackson.annotation.JsonTypeId;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+// Lombok
 @Getter
 @Setter
-@AllArgsConstructor // 모든 필드 만드는 생성자
-@NoArgsConstructor // 걍 생성자
-@RequiredArgsConstructor // 꼭 있어야 하는 생성자
+@NoArgsConstructor // 그냥 생성자
+@ToString
+// 아니 그럼 그냥 @Data 쓰면 안되요? -> (ㅂ팀장님한테 불려간다니까...)
+// 알았어요 그냥 JPA 안쓰고 MyBatis 쓰고 Record 쓰겠읍니다 ㅠㅠ
+// JPA
 @Entity
 public class RealEstate {
     @Id
@@ -21,5 +22,5 @@ public class RealEstate {
     private String address;
     @Column(nullable = false)
     private long price;
-
+    // JPQL은 생략하겠다... (AI의 도움을 받아보세요...)
 }
